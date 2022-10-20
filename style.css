@@ -1,0 +1,46 @@
+div, body, html
+{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+#navbar {
+    display: flex;
+    background-color: black;
+}
+
+.navitem {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+#navbar {
+    height: 441px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    }
+
+.navitem {
+    font-size: 24px;
+}
+}
+
+@media screen and (min-width: 768px)
+{
+    #navbar {
+        height: 75px;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navitem {
+        margin-right: 5%;
+        font-size: 24px;
+    }
+}
